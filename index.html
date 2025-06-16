@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ángel León | Bots y Automatización</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f0f4f8;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    #lang-switch {
+      margin-top: 20px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #1a73e8;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 10px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: '✔️';
+      margin-right: 10px;
+      color: #1a73e8;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #25D366;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #1ebe5b;
+    }
+    footer {
+      background: #2c5364;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .contact-info a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .lang-section {
+      display: none;
+    }
+    .lang-section.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ángel Gerardo León Álvarez</h1>
+    <p>Especialista en Bots, Automatización y Scraping</p>
+    <div id="lang-switch">
+      <button onclick="switchLanguage('es')">🇪🇸 Español</button>
+      <button onclick="switchLanguage('en')">🇺🇸 English</button>
+    </div>
+  </header>
+
+  <section id="es" class="lang-section active">
+    <div class="card">
+      <h2>Sobre mí</h2>
+      <p>Técnico Superior en Informáticacon con formación avanzada en Ingeniería, y más de 5 años desarrollando soluciones prácticas de automatización, scraping web, bots para plataformas como Telegram y WhatsApp, y herramientas personalizadas para negocios. Apasionado por optimizar procesos, reducir tareas manuales y conectar servicios mediante APIs. Autodidacta, resolutivo, y enfocado en resultados rápidos y funcionales, desarrollo de software, especializado en Python - Scripts, Django, Flask, FastAPI y Automatizacion de Procesos. Me motiva diseñar soluciones robustas, optimizar procesos y asegurar la calidad del código</p>
+    </div>
+
+    <div class="card">
+      <h2>Servicios</h2>
+      <ul>
+        <li>🤖 Bots personalizados para Telegram, WhatsApp y trading</li>
+        <li>🔁 Automatización de procesos (RPA)</li>
+        <li>🌐 Scraping y extracción de datos (Google Maps, sitios web)</li>
+        <li>📊 Backtesting de estrategias técnicas</li>
+        <li>🛠️ Desarrollo de herramientas a medida</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Portafolio</h2>
+      <ul>
+        <li><strong>Google Maps Scraper:</strong> extracción de negocios con filtros personalizados</li>
+        <li><strong>Telegram Bot:</strong> señales de trading, reenvío y análisis</li>
+        <li><strong>Automatización de Archivos:</strong> monitoreo y ejecución según archivos .txt</li>
+        <li><strong>Trading Bot:</strong> señales Long/Short, indicadores técnicos, resultados CSV</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Contacto</h2>
+      <p>Email: <a href="mailto:angelgleon@gmail.com">angelgleon@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/angel-gerardo-leon-alvarez/" target="_blank">Mi perfil</a></p>
+      <p>GitHub: <a href="https://github.com/angelgleon2014" target="_blank">Ver proyectos</a></p>
+      <a class="button" href="https://wa.me/56922081983" target="_blank">💬 Contáctame por WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="en" class="lang-section">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>A senior computer scientist with advanced training in engineering, he has over five years of experience developing practical automation solutions, web scraping, bots for platforms like Telegram and WhatsApp, and custom business tools. Passionate about optimizing processes, reducing manual tasks, and connecting services through APIs. Self-taught, problem-solving, and focused on fast and functional results, he specializes in software development, specializing in Python - Scripts, Django, Flask, FastAPI, and Process Automation. I am motivated by designing robust solutions, optimizing processes, and ensuring code quality.</p>
+    </div>
+
+    <div class="card">
+      <h2>Services</h2>
+      <ul>
+        <li>🤖 Custom bots for Telegram, WhatsApp and trading</li>
+        <li>🔁 Process automation (RPA)</li>
+        <li>🌐 Web scraping (Google Maps, websites)</li>
+        <li>📊 Technical strategy backtesting</li>
+        <li>🛠️ Tailor-made software development</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Portfolio</h2>
+      <ul>
+        <li><strong>Google Maps Scraper:</strong> business data extraction with custom filters</li>
+        <li><strong>Telegram Bot:</strong> trading signals, forwarding and analysis</li>
+        <li><strong>File Automation:</strong> file monitoring and execution based on .txt input</li>
+        <li><strong>Trading Bot:</strong> Long/Short signals, technical indicators, CSV results</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:angelgleon@gmail.com">angelgleon@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/angel-gerardo-leon-alvarez/" target="_blank">My profile</a></p>
+      <p>GitHub: <a href="https://github.com/angelgleon2014" target="_blank">View projects</a></p>
+      <a class="button" href="https://wa.me/56922081983" target="_blank">💬 Message me on WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ángel Gerardo León Álvarez — Santiago, Chile</p>
+    <p class="contact-info">Available for remote work worldwide 🌍</p>
+  </footer>
+
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('.lang-section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(lang).classList.add('active');
+    }
+  </script>
+</body>
+</html>
